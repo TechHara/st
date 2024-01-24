@@ -54,9 +54,9 @@ int main(int argc, const char** argv) {
 
         auto count_double = static_cast<double>(count);
         std::cout << "min\t" << min << "\n";
-        std::cout << "max\t" << max << "\n";
         const auto mean = s / count_double;
         std::cout << "mean\t" << mean << "\n";
+        std::cout << "max\t" << max << "\n";
         if (count == 1) break;
 
         std::cout << "stddev\t" << sqrt((ss / count_double - mean * mean) * count_double / (count_double - 1)) << "\n";
